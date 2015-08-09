@@ -8,14 +8,14 @@ class Pair {
 public:
 		TFirst First;
 		TSecond Second;
-		Pair(int x, int y) {
+		Pair(int x, string y) {
 				this->First = x;
 				this->Second = y;
 		}
 };
 
 int main() {
-		Pair<int, int>* p1 = new Pair<int, int>(0, 0);
-		printf("Pair`2[System.Int32,System.Int32]\n");
-		printf("%d %d\n", p1->First, p1->Second);
+		Pair<int, string>* p1 = new Pair<int, string>(1, "two");
+		cout << "Pair`2[System.Int32,System.String]" << endl;
+		cout << p1->First << " " << p1->Second << endl;
 }
