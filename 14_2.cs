@@ -13,10 +13,19 @@ public class Color {
 								this.g = g;
 								this.b = b;
 				}
+				public static int one() { return 1; }
+}
+
+public class Color2 : Color {
+				public Color2(byte x, byte y, byte z): base(x, y, z) {
+				}
 }
 
 class MainRunner {
   static void Main() {
+						Color2.Black.r = 22;
 						Console.WriteLine(Color.Black.r + " " + Color.Black.g + " " + Color.Black.b);
+						Console.WriteLine(Color.one());
+						Console.WriteLine(Color2.one());
   }
 }
