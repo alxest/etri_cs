@@ -23,8 +23,9 @@ public class Color2 : Color {
 
 class MainRunner {
   static void Main() {
-						Color2.Black.r = 22;
 						Console.WriteLine(Color.Black.r + " " + Color.Black.g + " " + Color.Black.b);
+						Color2.Black.r = 22;
+						Console.WriteLine(Color.Black.r);
 						Console.WriteLine(Color.one());
 						Console.WriteLine(Color2.one());
   }
